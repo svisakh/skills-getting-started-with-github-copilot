@@ -114,5 +114,3 @@ def unregister_participant(activity_name: str, email: str = Query(...)):
     activity["participants"].remove(email)
     return {"message": f"Removed {email} from {activity_name}"}
 
-
-
