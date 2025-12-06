@@ -1,7 +1,7 @@
 """Tests for the Mergington High School API"""
 import pytest
 from fastapi.testclient import TestClient
-from src.app import app, activities
+from src.app import app
 
 
 @pytest.fixture
