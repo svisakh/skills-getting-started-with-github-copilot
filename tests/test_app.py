@@ -4,12 +4,6 @@ from fastapi.testclient import TestClient
 from src.app import app
 
 
-@pytest.fixture
-def client():
-    """Create a test client for the FastAPI app"""
-    return TestClient(app)
-
-
 def test_root_redirect(client):
     """Test that root redirects to static/index.html"""
     response = client.get("/", follow_redirects=False)
